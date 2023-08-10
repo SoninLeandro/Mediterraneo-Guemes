@@ -6,7 +6,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@400&display=swap" rel="stylesheet"> 
+		<link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@200,400,700&display=swap" rel="stylesheet">
+		<link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,300&display=swap" rel="stylesheet"> 
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="landing is-preload">
@@ -20,7 +21,7 @@
 				
 				<!-- Header -->
 					<header id="header" class="alt">
-						<h1><a href="index.html">Mediterráneo Güemes</a></h1>
+						<h1><a href="index.html" style="font-family: 'clash-display', sans-serif;">Mediterráneo Güemes</a></h1>
 						<nav id="nav">
 							<ul>
 								<li class="special">
@@ -29,7 +30,7 @@
 										<ul>
 											<li><a href="#ubicacion">Ubicación</a></li>
 											<li><a href="#unidades">Unidades</a></li>
-											<li><a href="media.html">Fotos/Videos</a></li>
+											<li><a href="media.html">Galería</a></li>
 											<li><a href="#recorrido-360">Recorrido 360</a></li>
 											<li><a href="#contacto">Contacto</a></li>
 										</ul>
@@ -48,16 +49,16 @@
 								<ul>
 									<li><a href="#ubicacion">Ubicación</a></li>
 									<li><a href="#unidades">Unidades</a></li>
-									<li><a href="media.html">Fotos/Videos</a></li>
+									<li><a href="media.html">Galería</a></li>
 									<li><a href="#recorrido-360">Recorrido 360</a></li>
 									<li><a href="#contacto">Contacto</a></li>
 								</ul>
 							</div>
 							<ul class="actions special">
-								<li><a href="#" class="button primary">Consultar</a></li>
+								<li><a href="#contacto" class="button primary" style="padding: 0 1.5em;">Consultar</a></li>
 							</ul>
 						</div>
-						<a href="#ubicacion" class="more scrolly">Ver mas</a>
+						<a href="#ubicacion" class="more scrolly"></a>
 					</section>
 			</div>
 					
@@ -69,7 +70,7 @@
 								<p>Inmejorable ubicación, a solo pocos metros de locales comerciales, bancos, bares y restaurantes.</p>
 							</header>
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.3553290507184!2d-57.547221523363795!3d-38.015494945595464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dc2506c232bf%3A0x7a0b4af94083bf70!2sAlsina%203023%2C%20B7602CWE%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2suk!4v1691590445788!5m2!1ses!2suk" 
-								width="900" height="300" style="border: solid 1px rgba(0,0,0, 0.5);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+								width="100%" height="300" style="border: solid 1px rgba(0,0,0, 0.5);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
 							</iframe>
 						</div>
 					</section>
@@ -77,7 +78,7 @@
 				<!-- Unidades -->
 					<section id="unidades" class="wrapper alt style2">
 						<section class="spotlight">
-							<div class="image"><img src="images/Images/foto-dron-dia.jpg" alt="" /></div><div class="content">
+							<div class="image"><img src="images/Images/3-amb-portada.jpg" alt="" /></div><div class="content">
 								<h2>Magna primis lobortis<br />
 								sed ullamcorper</h2>
 								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
@@ -85,7 +86,7 @@
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="images/Images/foto-dron-noche.jpg" alt="" /></div><div class="content">
+							<div class="image"><img src="images/Images/2-amb-frente-portada.jpg" alt="" /></div><div class="content">
 								<h2>Tortor dolore feugiat<br />
 								elementum magna</h2>
 								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
@@ -93,9 +94,17 @@
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
+							<div class="image"><img src="images/Images/2-amb-contra-portada.jpg" alt="" /></div><div class="content">
 								<h2>Augue eleifend aliquet<br />
 								sed condimentum</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								<a href="unidades.html">Ver mas</a>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/Images/Depto 2B.jpg" alt="" /></div><div class="content">
+								<h2>Magna primis lobortis<br />
+								sed ullamcorper</h2>
 								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
 								<a href="unidades.html">Ver mas</a>
 							</div>
@@ -149,14 +158,17 @@
 							</header>
 							<form method="post" action="#">
 								<div class="row gtr-uniform">
-									<div class="col-6 col-12-xsmall">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Nombre" />
+									<div class="col-4 col-12-xsmall">
+										<input type="text" name="name" id="name" value="" placeholder="Nombre" />
 									</div>
-									<div class="col-6 col-12-xsmall">
-										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+									<div class="col-4 col-12-xsmall">
+										<input type="email" name="email" id="email" value="" placeholder="Email" />
+									</div>
+									<div class="col-4 col-12-xsmall">
+										<input type="text" name="phone" id="phone" value="" placeholder="Tel" />
 									</div>
 									<div class="col-12">
-										<select name="demo-category" id="demo-category">
+										<select name="category" id="category">
 											<option value="">- Unidad -</option>
 											<option value="1">Alsina 5A</option>
 											<option value="1">Alsina 3B</option>
@@ -166,13 +178,12 @@
 									</div>
 					
 									<div class="col-12">
-										<textarea name="demo-message" id="demo-message" placeholder="Hola, estoy interesado en..."
+										<textarea name="message" id="message" placeholder="Estoy interesado en esta propiedad..."
 											rows="6"></textarea>
 									</div>
 									<div class="col-12">
 										<ul class="actions">
 											<li><input type="submit" value="Enviar" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
 										</ul>
 									</div>
 								</div>

@@ -162,6 +162,7 @@ input, select, textarea {
 		line-height: 1em;
 		margin: 0 0 1em 0;
 		text-transform: uppercase;
+		
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1852,7 +1853,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			box-shadow: 0 0 0 2px #21b2a6;
+			box-shadow: 0 0 0 2px #f7f7f5;
 		}
 
 	select {
@@ -2407,8 +2408,8 @@ input, select, textarea {
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		background-color: transparent;
 		border-radius: 3px;
-		border: 0;
-		box-shadow: inset 0 0 0 2px #fff;
+		border: solid 1.5px #f7f7f5;
+		/*box-shadow: inset 0 0 0 2px #fff;*/
 		color: #fff;
 		cursor: pointer;
 		display: inline-block;
@@ -2480,9 +2481,10 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #ed4933;
+			background-color: #f7f7f5;
 			box-shadow: none !important;
-			color: #ffffff !important;
+			color: #232323;
+			font-weight: normal;
 		}
 
 			input[type="submit"].primary:hover,
@@ -2490,7 +2492,9 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #ef5e4a !important;
+				background-color: transparent !important;
+				color: #f7f7f5;
+				border: solid 1px #f7f7f5;
 			}
 
 			input[type="submit"].primary:active,
@@ -2498,7 +2502,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #eb341c !important;
+				background-color: #f7f7f5 !important;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2696,19 +2700,19 @@ input, select, textarea {
 		}
 
 		.spotlight:nth-child(1) {
-			background-color: rgba(0, 0, 0, 0.075);
+			background-color: #1e1e1e;
 		}
 
 		.spotlight:nth-child(2) {
-			background-color: rgba(0, 0, 0, 0.15);
+			background-color: #232323;
 		}
 
 		.spotlight:nth-child(3) {
-			background-color: rgba(0, 0, 0, 0.225);
+			background-color: #1e1e1e;
 		}
 
 		.spotlight:nth-child(4) {
-			background-color: rgba(0, 0, 0, 0.3);
+			background-color: #232323;
 		}
 
 		.spotlight:nth-child(5) {
@@ -2820,6 +2824,7 @@ input, select, textarea {
 
 			.wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6 {
 				color: #1b1b1b;
+				font-weight: normal;
 			}
 
 			.wrapper.style1 hr {
@@ -2863,8 +2868,8 @@ input, select, textarea {
 			}
 
 				.wrapper.style1 select option {
-					color: #ffffff;
-					background: #21b2a6;
+					color: #1b1b1b;
+					background: #f7f7f5;
 				}
 
 			.wrapper.style1 input[type="checkbox"] + label,
@@ -3133,6 +3138,10 @@ input, select, textarea {
 
 		.wrapper.style4 {
 			background-color: transparent;
+		}
+
+		#category option {
+			background-color: #d9d9d6;
 		}
 
 		.wrapper.style5 {
@@ -3552,8 +3561,16 @@ input, select, textarea {
 		}
 
 			#header.alt h1, #header.alt nav{
-				pointer-events: none;
 				opacity: 0;
+			}
+
+			@media screen and (max-width: 545px) {
+				#header.alt h1, #header.alt nav {
+					opacity: 100;
+				}
+				#header.alt h1 a {
+					display: none;
+				}
 			}
 
 /* Banner */
@@ -3627,8 +3644,8 @@ input, select, textarea {
 		#banner p {
 			letter-spacing: 0.225em;
 			text-transform: uppercase;
-			font-size: 1.8rem;
-			font-weight: bold;
+			font-size: 3rem;
+			font-weight: normal;
 			margin-top: 1em;
 			line-height: normal;
 		}
@@ -3748,6 +3765,15 @@ input, select, textarea {
 			#banner h2 img {
 				width: 100%;
 				height: 100%;
+			}
+		}
+
+		@media screen and (max-width: 545px) {
+			#banner p {
+				font-size: 2rem;
+			}
+			#menu-inicio {
+				display: none;
 			}
 		}
 
@@ -3992,10 +4018,10 @@ input, select, textarea {
 /* Landing */
 
 	body.landing #page-wrapper-inicio  {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/Images/foto-dron-dia.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/Images/foto-dron-dia.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/Images/foto-dron-dia.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/Images/foto-dron-dia.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/Images/Exterior\ dia.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/Images/Exterior\ dia.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/Images/Exterior\ dia.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/Images/Exterior\ dia.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
