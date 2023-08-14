@@ -2141,7 +2141,7 @@ input, select, textarea {
 
 	ul {
 		list-style: none;
-		margin: 2em 0;
+		margin: 1em 0;
 		
 	}
 
@@ -2659,9 +2659,9 @@ input, select, textarea {
 
 	.spotlight {
 		-moz-align-items: center;
-		-webkit-align-items: center;
+		/*-webkit-align-items: center;
 		-ms-align-items: center;
-		align-items: center;
+		align-items: center;*/
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -2688,7 +2688,7 @@ input, select, textarea {
 			-webkit-order: 2;
 			-ms-order: 2;
 			order: 2;
-			max-width: 48em;
+			max-width: 58em;
 			width: 60%;
 		}
 
@@ -2785,7 +2785,7 @@ input, select, textarea {
 /* Wrapper */
 
 	.wrapper {
-		padding: 6em 0 4em 0 ;
+		padding: 6em 0 2em 0 ;
 	}
 
 		.wrapper > .inner {
@@ -2972,6 +2972,56 @@ input, select, textarea {
 				}
 
 			}
+
+/* Unidades */
+
+		.unidades-titulo {
+			padding-top: 2em;
+			border-top: solid 2px #fff;
+			border-color: rgba(0, 0, 0, 0.125);
+			margin: 5em 0 0 0;
+		}
+
+		.unidades-list {
+			display: flex;
+			justify-content: flex-start;
+			align-items: last baseline;
+			font-size: 1rem;
+		}
+
+		.unidades-list ul {
+			list-style: disclosure-closed;
+			padding: 0 4em;
+			margin-top: 0;
+		}
+
+		.content h2, .content p {
+			color: #f7f7f5;
+			font-weight: normal;
+		}
+
+		.content h2 {
+			margin-bottom: 0.7em;
+		}
+
+		.content p {
+			margin-bottom: 1.5em;
+			font-size: initial;
+		}
+
+		#unidades-desktop .parallax-section {
+			background-color: #232323;
+		}
+
+		#unidades-desktop a {
+			margin: 2em;
+		}
+
+		#unidades-desktop h2 {
+			font-weight: normal;
+		}
+
+/* Unidades ends */
 
 		.wrapper.style2 {
 			background-color: #2e3842;
@@ -3645,6 +3695,7 @@ input, select, textarea {
 			letter-spacing: 0.225em;
 			text-transform: uppercase;
 			font-size: 3rem;
+			font-family: 'Clash Display', sans-serif;
 			font-weight: normal;
 			margin-top: 1em;
 			line-height: normal;
@@ -3774,6 +3825,12 @@ input, select, textarea {
 			}
 			#menu-inicio {
 				display: none;
+			}
+		}
+
+		@media screen and (max-width: 395px) {
+			#banner p {
+				font-size: 1.5rem;
 			}
 		}
 

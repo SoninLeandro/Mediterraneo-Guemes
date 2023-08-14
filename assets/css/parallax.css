@@ -1,0 +1,51 @@
+.paralaix {
+    display: grid;
+    place-items: center;
+}
+
+.parallax-image {
+    display: block;
+    height: 940px;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.parallax-image-01 {
+    background-image: url("../../images/Images/3-amb-portada.jpg");
+}
+
+.parallax-image-02 {
+    background-image: url("../../images/Images/2-amb-frente-portada.jpg");
+
+}
+
+.parallax-image-03 {
+    background-image: url("../../images/Images/2-amb-contra-portada.jpg");
+}
+
+.parallax-image-04 {
+    background-image: url("../../images/Images/Depto\ 2B.jpg");
+}
+
+.parallax-section {
+    padding: 64px 64px 12px 64px;
+}
+
+.parallax-section > h2 {
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width: 809px) {
+    #unidades-desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 810px) {
+    #unidades-mobile {
+        display: none;
+    }
+}
