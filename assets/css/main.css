@@ -81,7 +81,8 @@ input, select, textarea {
 	}
 
 	body {
-		background: #2e3842;
+		background: #f7f7f5;
+		font-family: 'Clash Grotesk';
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -162,7 +163,7 @@ input, select, textarea {
 		line-height: 1em;
 		margin: 0 0 1em 0;
 		text-transform: uppercase;
-		
+		font-family: 'Clash Display';
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -2191,9 +2192,10 @@ input, select, textarea {
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
 			justify-content: center;
-			width: 100%;
+			/*width: 100%;*/
 			margin-left: 0;
 		}
+
 
 			ul.actions.special li:first-child {
 				padding-left: 0;
@@ -2973,18 +2975,39 @@ input, select, textarea {
 
 			}
 
+/*Ubicacion*/
+
+		#ubicacion {
+			padding-bottom: 4em;
+		}
+
+		#ubicacion .inner > header > p {
+			font-size: 0.9em;
+		}
+
 /* Unidades */
 
 		.unidades-titulo {
-			padding-top: 2em;
+			background-color: #f7f7f5;
+			color: #1b1b1b;
+			padding: 2em 0 0.5em 0;
 			border-top: solid 2px #fff;
 			border-color: rgba(0, 0, 0, 0.125);
-			margin: 5em 0 0 0;
+			margin: 0 auto;
+			text-align: center;
+			max-width: 45em;
+			font-weight: 400;
+		}
+
+		#unidades > p {
+			color: #1b1b1b;
+			font-size: 0.9em;
+			text-align: center;
 		}
 
 		.unidades-list {
 			display: flex;
-			justify-content: flex-start;
+			justify-content: space-evenly;
 			align-items: last baseline;
 			font-size: 1rem;
 		}
@@ -2993,6 +3016,28 @@ input, select, textarea {
 			list-style: disclosure-closed;
 			padding: 0 4em;
 			margin-top: 0;
+		}
+
+		.unidades-list .actions.special li {
+			list-style: none;
+			margin: 0 3em;
+		}
+
+		.unidades-list .actions.special li a {
+			padding: 0 1.5em;
+			background-color: #1d242a;
+			color: #f7f7f5;
+			border-radius: 5px;
+		}
+
+		.unidades-list .actions.special li a:hover {
+			background-color: transparent !important;
+			color: #1d242a;
+			border: solid 1px #1d242a;
+		}
+
+		.unidades-links {
+			margin-top: 15px;
 		}
 
 		.content h2, .content p {
@@ -3009,22 +3054,24 @@ input, select, textarea {
 			font-size: initial;
 		}
 
-		#unidades-desktop .parallax-section {
-			background-color: #232323;
+		.desktop .parallax-section {
+			background-color: #f7f7f5;
+			color: #232323;
 		}
 
-		#unidades-desktop a {
-			margin: 2em;
+		.desktop a {
+			margin: 0 2em 0.5em 0;
 		}
 
-		#unidades-desktop h2 {
+		.desktop h2 {
 			font-weight: normal;
+			color: #232323;
 		}
 
 /* Unidades ends */
 
 		.wrapper.style2 {
-			background-color: #2e3842;
+			background-color: #f7f7f5;
 		}
 
 		.wrapper.style3 {
@@ -3497,7 +3544,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease;
 		-ms-transition: background-color 0.2s ease;
 		transition: background-color 0.2s ease;
-		background: #2e3842;
+		background: #232323;
 		height: 3em;
 		left: 0;
 		line-height: 3em;
