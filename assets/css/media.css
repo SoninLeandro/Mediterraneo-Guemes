@@ -1,0 +1,25 @@
+#media-main header {
+    background-color: #1b1b1b;
+    height: 40vh;
+    color: #f7f7f5;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+#media-main .inner {
+    width: 80em;
+    margin 0 auto;
+}
+
+
+#media-main .inner img {
+    width: 450px;
+    height: 300px;
+    padding: 5px;
+}
+
+.inner.depto-img {
+    display:inline-flex;
+    flex-wrap: wrap;
+}
+

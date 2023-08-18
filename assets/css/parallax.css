@@ -5,7 +5,7 @@
 
 .parallax-image {
     display: block;
-    height: 940px;
+    height: 900px;
     width: 100%;
     background-size: cover;
     background-attachment: fixed;
@@ -32,11 +32,15 @@
 
 .parallax-section {
     padding: 64px 64px 12px 64px;
+}
 
+.parallax-section > span {
+    font-size: 0.9rem;
 }
 
 .parallax-header {
     display: inline-flex;
+    align-items: center;
 }
 
 .parallax-header > h2 {
@@ -44,22 +48,23 @@
     margin-bottom: 24px;
 }
 
-.parallax-header > h3 {
-    color: #232323;
-    margin-left: 25em;
-    font-weight: normal;
-    border: solid 1px #232323;
-}
-
-.parallax-header > h3 > span {
-    background-color: #232323;
+.parallax-header > .first {
     color: #f7f7f5;
-    padding: 0.3em 0.18em 0.6em 2.85em;
+    background-color: #232323;
+    margin-left: 25em;
+    padding: 0 10px;
+    border: solid 1px #232323;
+    text-align: center;
 }
 
-.parallax-section > span {
-    font-size: 0.9rem;
+.parallax-header > .second {
+    background-color: #f7f7f5;
+    color: #232323;
+    padding: 0 10px;
+    border: solid 1px #232323;
+    text-align: center;
 }
+
 
 @media screen and (max-width: 809px) {
     .desktop {

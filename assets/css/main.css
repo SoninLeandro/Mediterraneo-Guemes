@@ -158,7 +158,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #fff;
-		font-weight: 800;
+		font-weight: normal;
 		letter-spacing: 0.225em;
 		line-height: 1em;
 		margin: 0 0 1em 0;
@@ -3242,8 +3242,8 @@ input, select, textarea {
 		}
 
 		.wrapper.style5 {
-			background-color: #ffffff;
-			color: #4E4852;
+			background-color: #f7f7f5;
+			color: #232323;
 		}
 
 			.wrapper.style5 strong, .wrapper.style5 b {
@@ -4044,7 +4044,7 @@ input, select, textarea {
 
 	#footer {
 		padding: 6em 0 4em 0 ;
-		background-color: #1d242a;
+		background-color: #232323;
 		text-align: center;
 	}
 
