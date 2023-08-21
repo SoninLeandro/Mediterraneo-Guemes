@@ -1,25 +1,39 @@
 #media-main header {
     background-color: #1b1b1b;
-    height: 40vh;
+    height: 70vh;
     color: #f7f7f5;
     text-align: center;
-    padding-top: 3rem;
+    padding-top: 5rem;
+}
+/*
+#fotos-edificio {
+    width: 80em;
+    margin: 0 auto;
+    display: flex;
 }
 
+#fotos-edificio img {
+    width: 90%;
+    height: 350px;
+    padding: 5px;
+}
+*/
 #media-main .inner {
     width: 80em;
-    margin 0 auto;
+    margin: 0 auto;
+    
 }
 
-
-#media-main .inner img {
-    width: 450px;
+#media-main .inner .depto-img img {
+    width: 100%;
     height: 300px;
     padding: 5px;
 }
 
-.inner.depto-img {
-    display:inline-flex;
-    flex-wrap: wrap;
+.inner .depto-img {
+   /*display:inline-flex;
+    flex-wrap: wrap;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
