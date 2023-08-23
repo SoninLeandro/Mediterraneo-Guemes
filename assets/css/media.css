@@ -1,23 +1,123 @@
-#media-main header {
-    background-color: #1b1b1b;
-    height: 70vh;
-    color: #f7f7f5;
-    text-align: center;
-    padding-top: 5rem;
-}
-/*
-#fotos-edificio {
-    width: 80em;
-    margin: 0 auto;
-    display: flex;
+#media-body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    background-color: var(--background);
 }
 
-#fotos-edificio img {
-    width: 90%;
-    height: 350px;
-    padding: 5px;
+#media-wrapper {
+    padding-top: 2em;
 }
-*/
+
+/*Modal styles*/
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 20%;
+    width: 98%; 
+    height: 80%; 
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  }
+
+  #modalBtnEdificio {
+    cursor: pointer;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*Carousel styles*/
+
+.carousel {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 0px;
+    margin: 4px;
+    gap: 8px;
+    max-height: 430px; 
+    max-width: 1550px;
+    transition: all 0.2s;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.card {
+    padding: 4px;
+    min-width: 380px;
+    min-height: 400px;
+    color: white;
+    display: flex;
+    border-radius: 8px;
+    font-size: 48px;
+    transition: all 0.2s;
+    scroll-snap-align: start;
+}
+
+.card figure {
+    margin: 0px;
+    border-radius: 8px;
+    cursor: move;
+    cursor: grab;
+}
+
+
+.card figure:active {
+    cursor: grabbing;
+}
+
+.card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.container::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 6px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: #FF9950;
+    border-radius: 5px;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+    background: #FF9950;
+} 
+
+#media-main header h2 {
+    padding-top: 30px;
+    font-size: 2em;
+    text-align: center;
+}
+
 #media-main .inner {
     width: 80em;
     margin: 0 auto;
@@ -26,14 +126,12 @@
 
 #media-main .inner .depto-img img {
     width: 100%;
-    height: 300px;
+    height: 150px;
     padding: 5px;
 }
 
 .inner .depto-img {
-   /*display:inline-flex;
-    flex-wrap: wrap;*/
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(8, 1fr);
 }
 

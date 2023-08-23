@@ -13,7 +13,7 @@
 
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
+	<body id="media-body" class="is-preload">
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper-media">
@@ -28,7 +28,7 @@
 									<div id="menu">
 										<ul>
 											<li><a href="index.html#ubicacion">Ubicación</a></li>
-											<li><a href="unidades.html">Galería</a></li>
+											<li><a href="index.html#unidades">Unidades</a></li>
 											<li><a href="index.html#recorrido-360">Recorrido 360</a></li>
 											<li><a href="index.html#contacto">Contacto</a></li>
 										</ul>
@@ -40,18 +40,120 @@
 
 				<!-- Main -->
 					<article id="media-main">
-						<header>
-							<h2>Galería</h2>
-							<p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p>
-						</header>
-
 						
-
-						<section class="wrapper style5">
+						<section id="media-wrapper" class="wrapper style5">
 							<div class="inner">
+
+								<header>
+									<h2>Galería</h2>
+								</header>
+
+								<h2 id="modalBtnEdificio">El edificio</h2>
+								<div class="edificio">
+									<div class="depto-img edificio">
+										<img src="./images/Images/Exterior dia.jpg" alt="" />
+										<img src="./images/Images/Exterior noche.jpg" alt="" />
+										<img src="./images/Images/Media/Edificio/DJI_0122edit.jpg" alt="" />
+										<img src="./images/Images/Media/Edificio/DJI_0130edit.jpg" alt="" />
+										<img src="./images/Images/Media/Edificio/DSC00248edit.jpg" alt="" />
+										<img src="./images/Images/Media/Edificio/DSC00251edit.jpg" alt="" />
+										<img src="./images/Images/Media/Edificio/DSC_8720.jpg" alt="" />
+										<img src="./images/Images/Media/Edificio/DSC_8719.jpg" alt="" />
+										<img src="./images/Images/Media/Edificio/DSC_8717.jpg" alt="" />
+									</div>
+								</div>
+								<div id="media-modal" class="modal">
+									<span class="close">&times;</span>
+									<div class="carousel" id="carousel">
+										<section class='container'>
+											<article class="card active">
+												<figure>
+													<img
+														src="./images/Images/Exterior dia.jpg"
+														alt="Preview"
+														title="Preview"
+													/>
+												</figure>
+											</article>
+											<article class="card">
+												<figure>
+													<img
+														src="./images/Images/Exterior noche.jpg"
+														alt="Preview"
+														title="Preview"
+													/>
+												</figure>
+											</article>
+											<article class="card">
+												<figure>
+													<img
+														src="./images/Images/Media/Edificio/DJI_0122edit.jpg"
+														alt="Preview"
+														title="Preview"
+													/>
+												</figure>
+											</article>
+											<article class="card">
+												<figure>
+													<img
+														src="./images/Images/Media/Edificio/DJI_0130edit.jpg"
+														alt="Preview"
+														title="Preview"
+													/>
+												</figure>
+											</article>
+											<article class="card">
+												<figure>
+													<img
+														src="./images/Images/Media/Edificio/DSC00248edit.jpg"
+														alt="Preview"
+														title="Preview"
+													/>
+												</figure>
+											</article>
+											<article class="card">
+												<figure>
+													<img
+														src="./images/Images/Media/Edificio/DSC00251edit.jpg"
+														alt="Preview"
+														title="Preview"
+													/>
+												</figure>
+											</article>
+											<article class="card">
+												<figure>
+													<img
+														src="./images/Images/Media/Edificio/DSC_8720.jpg"
+														alt="Preview"
+														title="Preview"
+													/>
+												</figure>
+											</article>
+											<article class="card">
+												<figure>
+													<img
+														src="./images/Images/Media/Edificio/DSC_8719.jpg"
+														alt="Preview"
+														title="Preview"
+													/>
+												</figure>
+											</article>
+											<article class="card">
+												<figure>
+													<img
+														src="./images/Images/Media/Edificio/DSC_8717.jpg"
+														alt="Preview"
+														title="Preview"
+													/>
+												</figure>
+											</article>
+										</section>
+									</div>
+								</div>
+
 								<div class="depto 5a">
 									<h2>Alsina 3023 5A</h2>
-									<div class="depto-img inicio">
+									<div class="depto-img 5a">
 										<img src="./images/Images/Media/5A/DSC_8631-HDR.jpg" alt="" />
 										<img src="./images/Images/Media/5A/DSC_8636-HDR.jpg" alt="" />
 										<img src="./images/Images/Media/5A/DSC_8639-HDR.jpg" alt="" />
@@ -64,9 +166,8 @@
 										<img src="./images/Images/Media/5A/DSC_1822.jpg" alt="" />
 										<img src="./images/Images/Media/5A/DSC_8665.jpg" alt="" />
 										<img src="./images/Images/Media/5A/DSC_8658.jpg" alt="" />
-										<img src="./images/Images/Media/5A/3ro.jpg" style="width: 100%; height: 90%;" alt="" />
+										<img src="./images/Images/Media/5A/3ro.jpg" alt="" />
 									</div>
-								    
 								</div>	
 							</div>
 						</section>
@@ -99,5 +200,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/media.js"></script>
 	</body>
 </html>
