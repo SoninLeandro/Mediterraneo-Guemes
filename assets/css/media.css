@@ -5,9 +5,42 @@
     background-color: var(--background);
 }
 
+#media-main h2 {
+    padding-top: 30px;
+    font-size: 1.8em;
+    text-align: center;
+}
+
 #media-wrapper {
     padding-top: 2em;
 }
+
+#media-wrapper .inner {
+    max-width: 80em;
+    margin: 0 auto;
+}
+
+#media-wrapper .inner .media-img { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /*autofills the screen making it responsive*/
+    grid-gap: 5px;
+}
+
+    #media-wrapper .inner .media-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contenedor {
+        margin: 2em auto;
+    }
+
+    @media screen and (max-width:1420px) {
+        #media-wrapper .inner {
+            width: 90%;
+        }        
+    }
+
 
 /*Modal styles*/
 
@@ -16,30 +49,30 @@
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
-    top: 20%;
-    width: 98%; 
-    height: 80%; 
+    top: 3em;
+    width: 99%; 
+    height: 100%; 
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+    background-color: rgb(0,0,0, 0.97); /* Fallback color */
+    
   }
 
-  #modalBtnEdificio {
+  .media-img {
     cursor: pointer;
   }
 
   .close {
-    color: #aaa;
+    color: #f7f7f5;
     float: right;
-    font-size: 28px;
+    font-size: 40px;
     font-weight: bold;
   }
 
-  .close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+    .close:hover,
+    .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /*Carousel styles*/
@@ -47,6 +80,7 @@
 .carousel {
     display: flex;
     justify-content: center;
+    margin-top: 3em;
 }
 
 .container {
@@ -56,8 +90,8 @@
     padding: 8px 0px;
     margin: 4px;
     gap: 8px;
-    max-height: 430px; 
-    max-width: 1550px;
+    max-height: 650px; 
+    max-width: 830px;
     transition: all 0.2s;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -65,8 +99,8 @@
 
 .card {
     padding: 4px;
-    min-width: 380px;
-    min-height: 400px;
+    min-width: 830px;
+    min-height: 550px;
     color: white;
     display: flex;
     border-radius: 8px;
@@ -112,26 +146,55 @@
     background: #FF9950;
 } 
 
-#media-main header h2 {
-    padding-top: 30px;
-    font-size: 2em;
-    text-align: center;
+/*Mobile styles*/
+
+.depto-info {
+    margin-bottom: 1em;
 }
 
-#media-main .inner {
-    width: 80em;
-    margin: 0 auto;
-    
+#media-main .depto-info h4 {
+    border: solid 1px #1b1b1b;
+    width: fit-content;
+    padding: 0.3em;
+    background-color: #1b1b1b;
+    color: #f7f7f5;
+    border-radius: 5px;
+  }
+
+#media-main .unidades-list {
+    align-items: flex-start;
 }
 
-#media-main .inner .depto-img img {
-    width: 100%;
-    height: 150px;
-    padding: 5px;
+
+@media screen and (max-width: 950px) {
+    .container {
+        max-width: 665px;
+        max-height: 520px;
+    }
+    .card {
+        min-width: 665px;
+        min-height: 440px;
+    }
 }
 
-.inner .depto-img {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
+@media screen and (max-width: 690px) {
+    .container {
+        max-width: 530px;
+        max-height: 420px;
+    }
+    .card {
+        min-width: 530px;
+        min-height: 350px;
+    }
 }
 
+@media screen and (max-width: 570px) {
+    .container {
+        max-width: 360px;
+        max-height: 275px;
+    }
+    .card {
+        min-width: 360px;
+        min-height: 240px;
+    }
+}

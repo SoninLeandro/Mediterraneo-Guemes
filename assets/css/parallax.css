@@ -1,6 +1,7 @@
 .paralaix {
     display: grid;
     place-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
 }
 
 .parallax-image {
@@ -12,9 +13,11 @@
     background-position: center;
 }
 
+/*Background images*/
+
 .parallax-image-01 {
     background-image: url("../../images/Images/3-amb-portada.jpg");
-    border-top: solid 1px rgb(0,0,0, 0.5)
+    border-top: solid 1px rgb(0,0,0, 0.5);
 }
 
 .parallax-image-02 {
@@ -30,8 +33,12 @@
     background-image: url("../../images/Images/Depto\ 2B.jpg");
 }
 
+
+
 .parallax-section {
     padding: 64px 64px 12px 64px;
+    width: 100%;
+    height: auto;
 }
 
 .parallax-section > span {
@@ -65,14 +72,50 @@
     text-align: center;
 }
 
+/*Tablet and smaller desktop screens */
 
-@media screen and (max-width: 809px) {
+@media screen and (max-width: 1490px) {
+    .unidades-list ul {
+        padding: 0 2em;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .unidades-list .actions.special li {
+        margin: 0 1em;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .unidades-list .actions.special {
+        display: block;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width:1015px) {
+    .parallax-header > .first {
+        margin-left: 18em;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .unidades-list {
+        font-size: .9em;
+    }
+
+    .parallax-section span {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 810px) {
     .desktop {
         display: none;
     }
 }
 
-@media screen and (min-width: 810px) {
+@media screen and (min-width: 811px) {
     .mobile {
         display: none;
     }

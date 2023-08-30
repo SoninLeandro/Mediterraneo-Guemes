@@ -1,8 +1,9 @@
-// Get the modal
+/*Modal*/
+
 var modal = document.getElementById("media-modal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("modalBtnEdificio");
+var btn = document.getElementsByClassName("media-img")[0];
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
