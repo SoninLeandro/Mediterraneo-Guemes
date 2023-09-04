@@ -1,0 +1,42 @@
+#unidades-mobile-body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    background-color: #f7f7f5;
+}
+
+#unidades-mobile-main {
+    max-width: 810px;
+    margin: 0 auto;
+}
+
+#unidades-mobile-main .depto-info {
+    margin-bottom: 1em;
+    color: #1b1b1b;
+}
+
+#unidades-mobile-main .depto-info h4 {
+    border: solid 1px #1b1b1b;
+    width: fit-content;
+    padding: 0.3em;
+    background-color: #1b1b1b;
+    color: #f7f7f5;
+    border-radius: 5px;
+  }
+
+#unidades-mobile-main .unidades-list {
+    align-items: flex-start;
+    padding-bottom: 1em;
+}
+
+#unidades-mobile-container .depto-info h3 {
+    color: #232323;
+    font-size: 2em;
+    padding-top: 0.5em;
+}
+
+@media screen and (max-width:450px) {
+    #unidades-mobile-container .depto-info h3 {
+        font-size: 1.5em;
+    }
+}

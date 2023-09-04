@@ -2,6 +2,7 @@
     display: grid;
     place-items: center;
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    border-bottom: solid 1px rgb(0,0,0,0.5);
 }
 
 .parallax-image {

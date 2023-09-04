@@ -41,6 +41,14 @@
         }        
     }
 
+    @media screen and (max-width:811px) {
+        #media-wrapper .inner .media-img { 
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /*autofills the screen making it responsive*/
+            grid-gap: 7px;
+        }
+    }
+
 
 /*Modal styles*/
 
@@ -61,15 +69,15 @@
     cursor: pointer;
   }
 
-  .close {
+  .close-modal {
     color: #f7f7f5;
     float: right;
     font-size: 40px;
     font-weight: bold;
   }
 
-    .close:hover,
-    .close:focus {
+    .close-modal:hover,
+    .close-modal:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
@@ -146,24 +154,6 @@
     background: #FF9950;
 } 
 
-/*Mobile styles*/
-
-.depto-info {
-    margin-bottom: 1em;
-}
-
-#media-main .depto-info h4 {
-    border: solid 1px #1b1b1b;
-    width: fit-content;
-    padding: 0.3em;
-    background-color: #1b1b1b;
-    color: #f7f7f5;
-    border-radius: 5px;
-  }
-
-#media-main .unidades-list {
-    align-items: flex-start;
-}
 
 
 @media screen and (max-width: 950px) {
@@ -190,11 +180,11 @@
 
 @media screen and (max-width: 570px) {
     .container {
-        max-width: 360px;
+        max-width: 350px;
         max-height: 275px;
     }
     .card {
-        min-width: 360px;
+        min-width: 350px;
         min-height: 240px;
     }
 }
