@@ -63,7 +63,7 @@
     z-index: 1; /* Sit on top */
     left: 0;
     top: 3em;
-    width: 99%; 
+    width: 99%; /* So the "X" to close is visible */
     height: 100%; 
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0, 0.97); /* Fallback color */
